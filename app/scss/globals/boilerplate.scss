@@ -1,0 +1,9 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: var(--font-inter);
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
