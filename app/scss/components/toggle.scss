@@ -6,10 +6,15 @@
     display: grid;
     grid-template-columns: 1fr rem(60) 1fr;
     gap: rem(4.8) rem(8);
-    margin: 0;
+    margin: auto;
+    @include breakpoint(medium) {
+        margin: 0;
+    }
     label {
         font-size: rem(14);
         align-self: center;
+        color: var(--dark-text1);
+        font-weight: 700;
         &[for="dark"] {
             grid-column: 1 / 2;
             justify-self: end;

@@ -13,4 +13,11 @@
     @include breakpoint(large) {
         grid-template-columns: repeat(4, 255px);
     }
+    #overHeading {
+        grid-column: 1 / -1;
+        @include breakpoint-down(small) {
+            margin-block-start: none;
+            margin-block-end: none;
+        }
+    }
 }
