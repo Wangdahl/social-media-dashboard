@@ -1,5 +1,68 @@
 @use '../util/util_index' as *;
 
 .card {
-    padding: rem(20);
+    align-self: center;
+    background-color: var(--dark-card);
+    color: var(--dark-text1);
+    width: rem(255);
+    text-align: center;
+    padding: rem(25);
+    border-radius: rem(4);
+    &--facebook {
+        border-top: 4px solid var(--facebook);
+    }
+    &--twitter {
+        border-top: 4px solid var(--twitter);
+    }
+    &--instagram {
+        border-top: 4px solid transparent;
+        border-image: linear-gradient(to right, var(--instagram-start), var(--instagram-end)) 1;
+    }
+    &--youtube {
+        border-top: 4px solid var(--youtube);
+    }
+    &__platform {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: rem(8);
+    }
+    &__username {
+        font-size: rem(12);
+        font-weight: 700;
+        margin: 0;
+    }
+    &__count {
+        margin: rem(24);
+        &--big {
+            font-size: rem(50);
+            font-weight: 700;
+            color: var(--dark-text2);
+        }
+    }
+    &__label {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-weight: 300;
+        font-size: rem(14);
+    }
+    &__change {
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: rem(4);
+            font-size: rem(12);
+            font-weight: 700;
+        }
+        &--up {
+
+            color: var(--limegreen)
+        }
+        &--down {
+
+            color: var(--brightred)
+        }
+    }
 }
+

@@ -1,0 +1,31 @@
+@use '../util/util_index' as *;
+
+
+
+.small-card {
+    align-self: center;
+    background-color: var(--dark-card);
+    color: var(--dark-text1);
+    width: rem(255);
+    text-align: center;
+    padding: rem(25);
+    border-radius: rem(4);
+    
+    &__stats {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-top: rem(20);
+    }
+    &__count {
+        font-size: rem(36);
+        font-weight: 700;
+        color: var(--dark-text2);
+        line-height: rem(34);
+    }
+    &__platform {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

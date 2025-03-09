@@ -1,0 +1,16 @@
+@use '../util/util_index' as *;
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: rem(24);
+    justify-content: center;
+    @include breakpoint(medium) {
+        display: grid;
+        grid-template-columns: repeat(2, 255px);
+    }
+    @include breakpoint(large) {
+        grid-template-columns: repeat(4, 255px);
+    }
+}

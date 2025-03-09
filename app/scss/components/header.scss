@@ -1,0 +1,27 @@
+@use '../util/util_index' as *;
+
+
+.header {
+    margin-top: rem(36);
+    display: flex;
+    flex-wrap: wrap;
+    @include breakpoint(medium){
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        width: 100%;
+
+        @include breakpoint(medium) {
+            width: auto;
+        }
+    }
+    &__subtitle {
+        margin: 0;
+        padding: 0;
+        font-size: rem(14);
+        font-weight: 700;
+        color: var(--dark-text1);
+    }
+
+}
