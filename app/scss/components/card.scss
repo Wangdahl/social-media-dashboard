@@ -2,8 +2,8 @@
 
 .card {
     align-self: center;
-    background-color: var(--dark-card);
-    color: var(--dark-text1);
+    background-color: var(--card);
+    color: var(--text1);
     width: rem(255);
     text-align: center;
     padding: rem(25);
@@ -37,7 +37,7 @@
         &--big {
             font-size: rem(50);
             font-weight: 700;
-            color: var(--dark-text2);
+            color: var(--text2);
         }
     }
     &__label {

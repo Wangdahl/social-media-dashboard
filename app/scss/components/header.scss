@@ -12,7 +12,7 @@
     }
     &__title {
         width: 100%;
-        border-bottom: 1px solid var(--dark-text1);
+        border-bottom: 1px solid var(--text1);
         padding-bottom: rem(18);
         margin-bottom: rem(18);
         @include breakpoint(medium) {
@@ -27,7 +27,7 @@
         padding: 0;
         font-size: rem(14);
         font-weight: 700;
-        color: var(--dark-text1);
+        color: var(--text1);
     }
 
 }

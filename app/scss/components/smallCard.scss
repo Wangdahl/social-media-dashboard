@@ -2,8 +2,8 @@
 
 .small-card {
     align-self: center;
-    background-color: var(--dark-card);
-    color: var(--dark-text1);
+    background-color: var(--card);
+    color: var(--text1);
     width: rem(255);
     text-align: center;
     padding: rem(25);
@@ -18,7 +18,7 @@
     &__count {
         font-size: rem(36);
         font-weight: 700;
-        color: var(--dark-text2);
+        color: var(--text2);
         line-height: rem(34);
     }
     &__platform {
